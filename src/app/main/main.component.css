@@ -45,6 +45,13 @@ body {
     font-weight: 500;
     overflow: hidden;
     /* Hiding overflow content */
+} 
+.icon {
+    margin-left: 30px;
+}
+.icon i {
+    font-size: 25px;
+    color: white; 
 }
 
 /* Header Styles */
