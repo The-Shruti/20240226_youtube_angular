@@ -1,0 +1,374 @@
+<!-- This HTML document represents a YouTube clone dashboard page. It includes various sections such as the header, left-side menu, and right-side content. -->
+
+<!-- Title of the webpage -->
+<title>Youtube Clone</title>
+
+<!-- Base URL for relative URLs -->
+<base href="/">
+
+<!-- Linking Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<!-- Main container for Youtube dashboard -->
+<div class="youtube-dash">
+    <!-- Header Section -->
+    <div class="header">
+        <!-- Logo Section -->
+        <div class="logo">
+            <div class="logo-img">
+                <img src="assets/images/youtube-logo.png" alt="logo" width="200px" height="100px">
+            </div>
+        </div>
+
+        <!-- Search Bar Section -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search" name="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-microphone"></i>
+        </div>
+        <!-- Header Profile Section -->
+        <div class="header-profile">
+            <i class="fa-solid fa-video"></i>
+            <div class="notification">
+                <!-- Notification Number -->
+                <span class="notification-number">5</span>
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </div>
+        <!-- Dropdown Container Section -->
+        <div class="dropdown-container">
+            <details class="dropdown right">
+                <summary class="avatar">
+                    <img src="assets/images/pic.png">
+                </summary>
+                <ul>
+                    <!-- User Details Area -->
+                    <li>
+                        <p>
+                            <span class="block bold">Jane Doe</span>
+                            <span class="block italic">Jane.com</span>
+                        </p>
+                    </li>
+                    <!-- Menu links -->
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined"></span> Account
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink="settings">
+                            <span class="material-symbols-outlined"></span> Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined"></span> Help
+                        </a>
+                    </li>
+                    <!-- Optional divider -->
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined"></span> Logout
+                        </a>
+                    </li>
+                </ul>
+            </details>
+        </div>
+    </div>
+    <!-- Wrapper Section -->
+    <div class="wrapper">
+        <!-- Left Side Section -->
+        <div class="left-side">
+            <!-- Side Wrapper Section -->
+            <div class="side-wrapper">
+                
+                <!-- Side Menu Section -->
+                <div class="side-menu">
+                    <!-- Side menu items -->
+                    <a class="active" href="#">
+                        <i class="fa-solid fa-house"></i>Home
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-file-lines"></i>Explore
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-line"></i>Shorts
+                    </a>
+                    <a routerLink="subscription">
+                        <i class="fa-solid fa-chart-pie"></i>Subscriptions
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-book"></i>Library
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-landmark"></i>History
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-video"></i>Your Videos
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-briefcase"></i>Watch Later
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-box-archive"></i>Liked Videos
+                    </a>
+                </div>
+            </div>
+            <!-- Side Wrapper Section -->
+            <div class="side-wrapper">
+                <!-- Side Title Section -->
+                <div class="side-title">
+                    Explore
+                </div>
+                <!-- Side Menu Section -->
+                <div class="side-menu">
+                    <!-- Explore menu items -->
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>Motivation
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-file-lines"></i>Mycode
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-line"></i>Web Design
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-pie"></i>Web Development
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-book"></i>3D/AR
+                    </a>
+                </div>
+            </div>
+            <!-- Side Wrapper Section -->
+            <div class="side-wrapper">
+                <!-- Side Title Section -->
+                <div class="side-title">
+                    More From Youtube
+                </div>
+                <!-- Side Menu Section -->
+                <div class="side-menu">
+                    <!-- More From Youtube menu items -->
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>YouTube Premium
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-file-lines"></i>Movies
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-line"></i>Gaming
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-pie"></i>Live
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-book"></i>Fashion & Beauty
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-book"></i>Learning
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-book"></i>Sports
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-book"></i>Setting
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-book"></i>Report History
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-book"></i>Help
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-book"></i>Send Feedback
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Right Side Section -->
+        <div class="right-side">
+            <!-- Main Container Section -->
+            <div class="main-container">
+                <!-- Main Header Section -->
+                <div class="main-header">
+                    <div class="header-menu">
+                        <!-- Looping through header menu items -->
+                        <a *ngFor="let item of headerMenuItems" href="#" class="main-header-link"
+                            [class.active]="item === 'Desktop'">
+                            {{ item }}
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Content Wrapper Section -->
+                <div class="content-wrapper">
+                    <!-- Content Section -->
+                    <div class="content-section">
+                        <!-- Apps Card Section -->
+                        <div class="apps-card">
+                            <!-- First row of images -->
+                            <!-- Looping through app cards data -->
+                            <div class="app-card" *ngFor="let card of appCards">
+                                <a href="#">
+                                    <img [src]="card.imageUrl" height="200px" width="400px">
+                                </a>
+                                <div class="flex-div">
+                                    <div class="vid-info">
+                                        <a href="#">
+                                            {{ card.title }}
+                                        </a>
+                                        <div class="content-text">
+                                            <p>{{ card.description1 }}</p>
+                                            <p>{{ card.description2 }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Looping through additional card data -->
+                            <div class="app-card" *ngFor="let card of cardsData">
+                                <a href="#">
+                                    <img [src]="card.imageUrl" height="200px" width="400px">
+                                </a>
+                                <div class="flex-div">
+                                    <div class="vid-info">
+                                        <a href="#">
+                                            {{ card.title }}
+                                        </a>
+                                        <div class="content-text">
+                                            <p>{{ card.description1 }}</p>
+                                            <p>{{ card.description2 }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Static card -->
+                            <div class="app-card">
+                                <a href="#">
+                                    <img src="assets/images/p3.png" width="400px" height="200px">
+                                </a>
+                                <div class="flex-div">
+                                    <div class="vid-info">
+                                        <a href="#">
+                                            Taarak Mehta ka Ooltah Chashmah
+                                        </a>
+                                        <div class="content-text">
+                                            <p>Episode 136</p>
+                                            <p>Full Episode</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second row of images -->
+                        <div class="apps-card">
+                            <!-- Static cards -->
+                            <div class="app-card">
+                                <a href="#">
+                                    <img src="assets/images/p4.png" height="310px" width="400px">
+                                </a>
+                                <div class="flex-div">
+                                    <div class="vid-info">
+                                        <a href="#">
+                                            Uska Hi Banana Lyrics Song
+                                        </a>
+                                        <div class="content-text">
+                                            <p>1920 Evil Returns</p>
+                                            <p>Moon Light Status</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-card">
+                                <a href="#">
+                                    <img src="assets/images/p5.png" height="310px" width="400px">
+                                </a>
+                                <div class="flex-div">
+                                    <div class="vid-info">
+                                        <a href="#">
+                                            SuperHit Comedy Movie
+                                        </a>
+                                        <div class="content-text">
+                                            <p>Movie: Dhol</p>
+                                            <p>Rajpal Yadav-Sharman Joshi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-card">
+                                <a href="#">
+                                    <img src="assets/images/p6.png" width="400px" height="300px">
+                                </a>
+                                <div class="flex-div">
+                                    <div class="vid-info">
+                                        <a href="#">
+                                            Dunki:O Maahi(Audio)
+                                        </a>
+                                        <div class="content-text">
+                                            <p>Shah Rukh Khan | Rajkumar Hirani</p>
+                                            <p>2024 Movie: Dunki</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apps-card">
+                            <!-- Static cards -->
+                            <div class="app-card">
+                                <a href="#">
+                                    <img src="assets/images/p7.png" height="300px" width="400px">
+                                </a>
+                                <div class="flex-div">
+                                    <div class="vid-info">
+                                        <a href="#">
+                                            Namaste JavaScript
+                                        </a>
+                                        <div class="content-text">
+                                            <p>Whole Playlist</p>
+                                            <p>By Akshay Saini</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-card">
+                                <a href="#">
+                                    <img src="assets/images/p8.png" height="300px" width="400px">
+                                </a>
+                                <div class="flex-div">
+                                    <div class="vid-info">
+                                        <a href="#">
+                                            Ram Siya Ram(Lyrical)
+                                        </a>
+                                        <div class="content-text">
+                                            <p>Movie: Adipurush</p>
+                                            <p>Prabhas | Sachet-Parampara</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-card">
+                                <a href="#">
+                                    <img src="assets/images/p9.png" width="400px" height="300px">
+                                </a>
+                                <div class="flex-div">
+                                    <div class="vid-info">
+                                        <a href="#">
+                                            The Kapil Sharma Shows
+                                        </a>
+                                        <div class="content-text">
+                                            <p>Comedy Night with Vicky Kaushal</p>
+                                            <p>Season 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

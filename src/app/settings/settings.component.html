@@ -1,0 +1,152 @@
+<!-- Title of the webpage -->
+<title>Youtube Clone</title>
+
+<!-- Base URL for relative URLs -->
+<base href="/">
+
+<!-- External stylesheet for Font Awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+
+<!-- Main container for the YouTube dashboard -->
+<div class="youtube-dash">
+    <!-- Header section -->
+    <div class="header">
+        <!-- Logo section -->
+        <div class="logo">
+            <div class="logo-img">
+                <img src="assets/images/youtube-logo.png" alt="logo" width="200px" height="100px">
+            </div>
+        </div>
+        
+        <!-- Search bar section -->
+        <div class="search-bar">
+            <!-- Input field for search -->
+            <input type="text" placeholder="Search" name="">
+            <!-- Search icon -->
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <!-- Microphone icon -->
+            <i class="fa-solid fa-microphone"></i>
+        </div>
+        
+        <!-- Header profile section -->
+        <div class="header-profile">
+            <!-- Video icon -->
+            <i class="fa-solid fa-video"></i>
+            <!-- Notification section -->
+            <div class="notification">
+                <!-- Notification number -->
+                <span class="notification-number">5</span>
+                <!-- Bell icon -->
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </div>
+
+        <!-- Dropdown container for user profile -->
+        <div class="dropdown-container">
+            <!-- Dropdown menu for user profile -->
+            <details class="dropdown right">
+                <!-- Summary with user avatar -->
+                <summary class="avatar">
+                    <!-- User avatar image -->
+                    <img src="assets/images/pic.png">
+                </summary>
+                <!-- Dropdown menu items -->
+                <ul>
+                    <!-- User details area -->
+                    <li>
+                        <!-- User details such as name and website -->
+                        <p>
+                            <span class="block bold">Jane Doe</span>
+                            <span class="block italic">Jane.com</span>
+                        </p>
+                    </li>
+                    <!-- Menu links -->
+                    <li>
+                        <!-- Link to user account -->
+                        <a href="#">
+                            <span class="material-symbols-outlined"></span> Account
+                        </a>
+                    </li>
+                    <li>
+                        <!-- Link to settings page -->
+                        <a routerLink="settings">
+                            <span class="material-symbols-outlined"></span> Settings
+                        </a>
+                    </li>
+                    <li>
+                        <!-- Link to help page -->
+                        <a href="#">
+                            <span class="material-symbols-outlined"></span> Help
+                        </a>
+                    </li>
+                    <!-- Divider between menu items -->
+                    <li class="divider"></li>
+                    <li>
+                        <!-- Logout link -->
+                        <a href="#">
+                            <span class="material-symbols-outlined"></span> Logout
+                        </a>
+                    </li>
+                </ul>
+            </details>
+        </div>
+
+    </div>
+    <!-- Wrapper for left and right side content -->
+    <div class="wrapper">
+        <!-- Left side menu -->
+        <div class="left-side">
+            <!-- Side menu wrapper -->
+            <div class="side-wrapper">
+                <!-- Title for side menu -->
+                <div class="side-title">
+                    <h2>Settings</h2>
+                </div>
+                <!-- Side menu items -->
+                <div class="side-menu">
+                    <!-- Active menu item for accounts -->
+                    <a class="active" href="#">
+                        <i class="fa-solid fa-house"></i>Accounts
+                    </a>
+                    <!-- Menu item for notifications -->
+                    <a href="#">
+                        <i class="fa-solid fa-file-lines"></i>Notification
+                    </a>
+                    <!-- Menu item for privacy settings -->
+                    <a href="#">
+                        <i class="fa-solid fa-chart-line"></i>Privacy
+                    </a>
+                    <!-- Menu item for billing and payments -->
+                    <a href="#">
+                        <i class="fa-solid fa-chart-pie"></i>Billing & Payments
+                    </a>
+                    <!-- Menu item for advanced settings -->
+                    <a href="#">
+                        <i class="fa-solid fa-book"></i>Advance Settings
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Right side content -->
+        <div class="right-side">
+            <!-- Main header for right side content -->
+            <div class="main-header">
+                <!-- Title for accounts section -->
+                <h2>Accounts</h2>
+            </div>
+            <!-- Main container for content -->
+            <div class="main-container">
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    <!-- Account information section -->
+                    <div class="account-info">
+                        <!-- Subtitle for account information -->
+                        <h4>Choose how you appear and what you see on YouTube</h4>
+                        <!-- User information -->
+                        <p>Signed in as JohnDoe.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

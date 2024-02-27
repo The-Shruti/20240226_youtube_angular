@@ -1,0 +1,142 @@
+<title>Youtube Clone</title>
+<base href="/">
+
+<!-- Corrected href attribute with quotes -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+<div class="youtube-dash">
+    <div class="header">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="assets/images/youtube-logo.png" alt="logo" width="200px" height="100px">
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search" name="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-microphone"></i>
+        </div>
+        <div class="header-profile">
+            <i class="fa-solid fa-video"></i>
+            <div class="notification">
+                <span class="notification-number">
+                    5 </span>
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <i class="fa-solid fa-sun"></i>
+            <a href="#" (click)="toggleUserProfile()"><img class="profile-user" src="assets/images/pic.png"></a>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="left-side">
+            <div class="side-wrapper">  
+                <div class="side-title">
+                    Subscriptions
+                </div>
+                <div class="side-menu">
+                    <a class="active" href="#">
+                        <i class="fa-solid fa-house"></i>Aaj Tak
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-file-lines"></i>Javascript by Akshay Saini
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-line"></i>Waitforit_Official
+                    </a>
+                    <a routerLink="subscription">
+                        <i class="fa-solid fa-chart-pie"></i>CodewithHarry
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-book"></i>Maan ki Baat
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-landmark"></i>Career Ride
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-video"></i>Tech Programming
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="main-container">
+                <div class="main-header">
+                    <div class="header-menu">
+                        <a *ngFor="let item of headerMenuItems" href="#" class="main-header-link"
+                            [class.active]="item === 'Desktop'">
+                            {{ item }}
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content-wrapper">
+                    <div class="content-section">
+                        <div class="apps-card">
+                            <!-- First row of images -->
+                            <div class="app-card" *ngFor="let card of appCards">
+                                <a href="#">
+                                    <img [src]="card.imageUrl" height="200px" width="400px">
+                                </a>
+                                <div class="flex-div">
+                                    <div class="vid-info">
+                                        <a href="#">
+                                            {{ card.title }}
+                                        </a>
+                                        <div class="content-text">
+                                            <p>{{ card.description1 }}</p>
+                                            <p>{{ card.description2 }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="app-card" *ngFor="let card of cardsData">
+                                <a href="#">
+                                    <img [src]="card.imageUrl" height="200px" width="400px">
+                                </a>
+                                <div class="flex-div">
+                                    <div class="vid-info">
+                                        <a href="#">
+                                            {{ card.title }}
+                                        </a>
+                                        <div class="content-text">
+                                            <p>{{ card.description1 }}</p>
+                                            <p>{{ card.description2 }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="app-card">
+                                <a href="#">
+                                    <img src="assets/images/p12.png" width="400px" height="200px">
+                                </a>
+                                <div class="flex-div">
+                                    <div class="vid-info">
+                                        <a href="#">
+                                            UP Police Paper leak Update
+                                        </a>
+                                        <div class="content-text">
+                                            <p>Aaj Tak</p>
+                                            <p>63 Watching</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
