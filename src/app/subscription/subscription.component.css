@@ -31,7 +31,14 @@ body{
     font-size: 15px; 
     font-weight: 500; 
     overflow: hidden;
-}  
+}   
+.icon {
+    margin-left: 30px;
+}
+.icon i {
+    font-size: 25px;
+    color: white; 
+}
 
 .header{
     display: flex; 
